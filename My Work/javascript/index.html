@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>JavaScript</title>
+    <script>
+        function yaz(){
+            alert("Merhaba Java");
+        }
+
+
+        // var değişkenleri
+        /////////////////////////////////////////
+        var value1 = "example string"   //string
+        var value2 = 'K';               //char
+        var value3 = 5;                 //int
+        var value4 = 5.4;               //decimal
+        var value5 = true;              //boolean
+        /***************************************/
+
+        // var deger = "15+3*8/2-7";
+        // alert(eval(deger));
+
+        function hesapla(){
+            var num1 = 5;
+            var num2 = 8;
+
+            alert(num1 + num2)
+            
+        }
+    /*
+        // Atama Operatörleri
+        ///////////////////////////////////////////////
+        = değişkene değer atamak için kullanılır
+        +=  num += 7 ile num = num + 7 aynıdır.
+        %= num %= 7 => num = num + mod7(num)
+        ///////////////////////////////////////////////
+
+
+        //Karşılaştırma Operatörleri
+        ///////////////////////////////////////////////////////////////////
+        ==   5 == 5 (true),       6 == 4 (false)
+        !=   4 != 3 (true),       6 != 4 (false)
+        <    3 < 4  (true),       6 < 4 (false)        
+        >    5 > 4  (false),      6 > 4 (true)        
+        <=
+        >=
+
+        === Hem içeriği hem tipi kontrol eder, string veya int vb.
+        /////////////////////////////////////////////////////////////////////
+
+
+        // Mantıksal Operatorler
+        /////////////////////////////////////////////////////////////////////
+            &&              ||
+         1 && 1 = 1     1 || 1 = 1
+         1 && 0 = 0     1 || 0 = 1
+         0 && 1 = 0     0 || 1 = 1
+         0 && 0 = 0     0 || 0 = 0
+
+        && nin işlem önceliği var. --- A && B || C && D && E --- ile --- (A && B) || (C && D && E) --- aynıdır.
+
+
+
+
+    */ 
+
+
+    function hesaplama(){
+        var result;
+
+        // alert(result); undefined
+        var num1 = 8;
+        var num2 = 18;
+
+        result = num1 + num2;
+
+        // alert("Sonuç = " + num1 + num2);  //Sonuç = 818.
+        alert("Sonuç = " + result);  //Sonuç = 26.
+
+        
+    }
+
+
+    function yaziyaz(){
+        document.getElementById('yazi').innerText += 'Merhaba JavaScript/';
+        document.getElementById('yazi').innerHTML += 'Break after this string <br>';
+    }
+
+    function pSayiHesapla(){
+        var pSayi = document.getElementById('sayi').innerText;
+        var sayi = 5;
+
+        alert("Sonuç = " + (Number(pSayi) + sayi));
+    }
+
+    </script>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="alert('Merhaba Dünya')">Tıkla</button>
+    <button class="btn btn-primary" onclick="yaz()">Yaz</button>
+    <button class="btn btn-primary" onclick="yaz2()">Yaz2</button>
+    <hr>
+    <button class="btn btn-danger" onclick="hesapla()">Hesapla</button>
+    <hr>
+    <button class="btn btn-secondary" onclick="hesaplama()">Hesaplama</button>
+    <hr>
+    <p id="yazi"></p>
+    <button class="btn btn-primary" onclick="yaziyaz()">Yazı Ekle</button>
+    <hr>
+    <p id="sayi">18</p>
+    <button class="btn btn-warning" onclick="pSayiHesapla()">Hesapla</button>
+
+
+
+    <script>
+        function yaz2(){
+            alert("Java Java");
+        }
+        /*  Or another comment like this; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam libero voluptas neque, maiores quos assumenda alias a itaque nam nihil, voluptatum tempore inventore fugit necessitatibus architecto ducimus, ipsam fugiat optio.
+            Modi, consequatur earum! Similique aperiam sed corporis culpa, laudantium neque iure odit, nisi molestias vel sapiente minima voluptatum quo ab deleniti odio consequuntur. Neque voluptas, eos autem cupiditate fugiat esse!
+            Inventore, molestiae molestias? Deserunt, quibusdam est recusandae sunt nam libero expedita minima, possimus soluta harum dignissimos quaerat odit iusto corrupti non tenetur. Ex ipsa quibusdam maxime architecto minima quas explicabo.
+            Nesciunt veritatis officia culpa molestias fugiat illo ad nobis ipsum voluptate, mollitia dolor vel repudiandae sunt suscipit aspernatur atque? Repellendus temporibus illo quaerat nobis velit quas earum magnam culpa? Autem.
+        */
+
+        // Single Line Comment
+
+
+        /*
+        Değişkenler
+
+        var
+        let:    farklı bir scope da aynı değişkeni kullanıp scope dışında eski değere döner.
+        const:  always stays the same
+    </script>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

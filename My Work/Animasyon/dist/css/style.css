@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+.gunes {
+    width: 150px;
+    height: 150px;
+    animation: don 5s infinite linear;
+    position: relative;
+    left: 270px;
+    top: 400px;
+}
+
+.image-fluid {
+    width: 100%;
+}
+
+.dunya {
+    width: 75px;
+    height: 75px;
+    animation: don 6s infinite linear;
+    position: relative;
+    left: 270px;
+    top: -37.5px;
+    
+}
+
+.ay{
+    width: 40px;
+    height: 40px;
+    animation: don 6s infinite linear;
+    position: relative;
+    top: 20px;
+
+}
+
+.ay-rota {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: dashed 3px #333;
+    border-radius: 50%;
+    position: relative;
+    left: -60px;
+    top: -135px;
+}
+
+.dunya-rota {
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: dashed 3px #333;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    animation: don 20s infinite linear;
+}
+
+@keyframes don {
+    100%{
+        transform: rotate(360deg)
+    }
+}
+

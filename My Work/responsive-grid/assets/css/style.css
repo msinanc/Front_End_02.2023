@@ -1,0 +1,92 @@
+:root{
+    /* Değişken tanımlama ve kullanma */
+    --kirmiziRenk : red;
+    --bg-color: rgb(241, 178, 5);
+    --box-100: 100px;
+    --box-50: 50%;
+    --box-100pc: 100%;
+}
+
+.container {
+    background-color: var(--kirmiziRenk);
+    height: 100vh;
+    width: var(--box-100pc);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 150px;
+    
+}
+
+.container .header {
+    grid-column: 1/12;
+    height: 200px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.container .header .logo {
+    grid-column: 1/3;
+    background-color: purple;
+    height: 100px;
+    grid-row: 1/2;
+}
+
+.container .header .menu {
+    grid-column: 3/12;
+    height: 100px;
+    background-color: orange;
+}
+
+.container .main {
+    grid-column: 1/12;
+    background-color: darkslategray;
+    grid-template-columns: repeat(11, 1fr);
+    display: grid;
+    grid-gap: 10px;
+}
+
+.container .main .banner {
+    grid-column: 1/12;
+    background-color: aqua;
+    height: 150px;
+}
+
+.container .main .content {
+    grid-column: 1/12;
+    background-color: olive;
+    height: 320px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    display: grid;
+}
+
+.container .main .content .content-item {
+    background-color: blueviolet;
+}
+
+.container .footer {
+    grid-column: 1/12;
+    height: 300px;
+    background-color: steelblue;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-gap: 10px;
+}
+
+.container .footer .footer-item {
+    background-color: #fb3;
+}
+
+@media screen and (max-width: 1000px) {
+    .container .main .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container .main .content{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    
+}
