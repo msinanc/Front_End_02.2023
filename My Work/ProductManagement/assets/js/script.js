@@ -20,7 +20,7 @@ const CategoryList = [];
 function addCategory(){
     const CategoryName  = document.getElementById("CategoryName").value;
 
-    if(CategoryName == null){
+    if(!CategoryName){
         alert("Category Name Cannot Be Empty!");
         return;
     }
@@ -43,5 +43,27 @@ function categoryUpdate(){
 
     const selectCategory = document.getElementById("SelectCategory");
 
-    selectCategory.innerHTML = ``
+    selectCategory.innerHTML = `<option disabled value="" selected> -- Select Category --</option>`
+
+    CategoryList.forEach((category) => {
+        const option = document.createElement("option");
+        option.value = category.CategoryName;
+        option.innerText = category.CategoryName;
+
+        selectCategory.add(option);
+    })
 }
+
+
+// Input'a basınca sayfanın yenilenmesini engeller.
+document.getElementById("addCategory").addEventListener("click", (e) => {
+    e.preventDefault();
+    addCategory();
+});
+
+document.getElementById("addProduct").addEventListener("click", (e) => {
+    e.preventDefault();
+    addCategory();
+});
+
+categoryUpdate();
