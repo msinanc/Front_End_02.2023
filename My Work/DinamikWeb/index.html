@@ -24,7 +24,8 @@
                         <option value="Div">Div</option>
                         <option value="p">Paragraph</option>
                         <option value="Header">Header</option>
-
+                        <option value="Link">Link</option>
+                        <option value="Image">Image</option>
                     </select>
 
                     <div id="headerSizeDiv" class="mb-3" style="display:none">
@@ -76,6 +77,11 @@
 
                     <label for="btnText">Button Text</label>
                     <input type="text" class="form-control mb-3" placeholder="Button Text" name="" id="btnText">
+
+                    <label id="imageLink" style="display: none;" for="imageLinkLabel">Image Link</label>
+                    <input type="file" placeholder="Load Image" class="form-control" name="" id="imageLinkLabel">
+                    
+                    
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-success form-control" onclick="addComponent()">Add Component</button>

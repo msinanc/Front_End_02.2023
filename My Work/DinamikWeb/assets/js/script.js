@@ -28,6 +28,12 @@ function addComponent() {
         case "Header":
             document.getElementById(componentId).append(addHeader());
             break;
+        case "Link":
+            document.getElementById(componentId).append(addLink());
+            break;
+        case "Image":
+            document.getElementById(componentId).append(addImage());
+            break;
     }
 }
 
@@ -86,6 +92,41 @@ function addHeader() {
     return head;
 }
 
+function addLink() {
+    var bgColor = document.getElementById("Color").value;
+    var textColor = document.getElementById("textColor").value;
+    var Text = document.getElementById("btnText").value;
+    var addClass = document.getElementById("addClass").value;
+    var addId = document.getElementById("addId").value;
+
+    //var div = `<div id="${addId}" class=" bg-${bgColor} text-${textColor} ${addClass}" >${Text}</div>`;
+
+    var link = document.createElement("a");
+    link.setAttribute("id", addId);
+    link.setAttribute("class", `${addClass} text-${textColor} bg-${bgColor}`);
+    link.textContent = Text;
+
+    return link;
+}
+
+function addImage() {
+    var bgColor = document.getElementById("Color").value;
+    var textColor = document.getElementById("textColor").value;
+    var Text = document.getElementById("btnText").value;
+    var addClass = document.getElementById("addClass").value;
+    var addId = document.getElementById("addId").value;
+    var addImageLink = document.getElementById("imageLinkLabel").value;
+
+    //var div = `<div id="${addId}" class=" bg-${bgColor} text-${textColor} ${addClass}" >${Text}</div>`;
+
+    var img = document.createElement("img");
+    img.setAttribute("id", addId);
+    img.setAttribute("src", addImageLink);
+    img.setAttribute("class", `${addClass} text-${textColor} bg-${bgColor}`);
+    img.textContent = Text;
+
+    return img;
+}
 
 
 ////////////////////     COMPONENT SELECTOR     //////////////////////////
@@ -96,14 +137,16 @@ function select() {
     switch (component) {
         case "Header":
             selectHeaderShow();
-            selectButtonHide();
             break;
         case "Button":
             selectButtonShow();
-            selectHeaderHide();
+        case "Image":
+            selectImageShow();
         default:
             selectButtonHide();
             selectHeaderHide();
+            selectImageHide();
+
     }
 }
 
@@ -123,6 +166,13 @@ function selectHeaderShow() {        //Show Header
     document.getElementById("headerSizeDiv").style.display = "block";
 }
 
+function selectImageHide() {        //Hide Image Link Text
+    document.getElementById("imageLink").style.display = "none";
+}
+
+function selectImageShow() {        //Show Image Link Text
+    document.getElementById("imageLink").style.display = "block";
+}
 
 
 function headerSize() {
@@ -132,4 +182,6 @@ function headerSize() {
 
     return size;
 }
+
+
 
