@@ -135,7 +135,7 @@ document.getElementById("addCategory").addEventListener("click", (e) => {
     addCategory();
 });
 
-document.getElementById("addUser").addEventListener("click", (e) => {
+document.getElementById("addCar").addEventListener("click", (e) => {
     e.preventDefault();
     addUser();
 });
@@ -151,7 +151,7 @@ function addUser() {
     const UserDriverLicense = document.getElementByName("UserDriverLicense").value.trim();
     
 
-    if (UserID === "" || UserNameSurname === "" || UserAge <= 0 || UserGender == "") {
+    if (UserID === "" || UserNameSurname === "" || UserAge <= 0 || UserGender == "" || UserDriverLicense == "") {
         alert("Boş Alan Bırakılamaz");
         return;
     }
