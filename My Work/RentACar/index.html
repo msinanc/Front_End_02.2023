@@ -15,7 +15,8 @@
             <div class="col-12 text-center">
                 <h1>Rent A Car</h1>
             </div>
-        
+            
+            <!--User Div-->
             <div class="col-4 m-5">
                 <div class="col-12">
                     <h3>Add User</h3>
@@ -72,11 +73,9 @@
                     </div>
                 </form>
 
-
-                
-
             </div>
             
+            <!--Car Div-->
             <div class="col-4 m-5">
                 <div class="col-12">
                     <h3>Add Car</h3>
@@ -103,7 +102,7 @@
                         <label for="carColor" class="col-4 mb-3">Car Color</label>
                         <div class="col-8 mb-3">
                             <select class="form-control text-center" name="carColor" id="carColor">
-                                <option disabled value selected> -- Select Category -- </option>
+                                <option disabled value selected> -- Select Color -- </option>
                                 <option value="">Blue</option>
                                 <option value="">Green</option>
                                 <option value="">Red</option>
@@ -120,8 +119,6 @@
                     </div>
                 </form>
 
-                
-                
             </div>
             
 
@@ -139,10 +136,11 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
-                                <th>Price</th>
-                                <th>Stock</th>
-                                <th>Settings</th>
+                                <th>ID</th>
+                                <th>Name Surname</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Driver's License</th>
                             </tr>
                         </thead>
                         <tbody id="UserList">
@@ -164,10 +162,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Brand</th>
+                                <th>Color</th>
                                 <th>Price</th>
-                                <th>Stock</th>
-                                <th>Settings</th>
                             </tr>
                         </thead>
                         <tbody id="CarList">
@@ -183,7 +181,7 @@
         </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
