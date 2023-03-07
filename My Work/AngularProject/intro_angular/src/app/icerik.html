@@ -1,0 +1,59 @@
+<my-app>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>{{classUser}} User List</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Gender</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Erhan</td>
+                                    <td>Mithat</td>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mithat</td>
+                                    <td>Tutal</td>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Özge</td>
+                                    <td>Bahçeci</td>
+                                    <td>Female</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Tuba</td>
+                                    <td>Tiryaki</td>
+                                    <td>Female</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr *ngFor="let item of users">
+                                    <td>1</td>
+                                    <td>{{item.Name}}</td>
+                                    <td>{{item.Surname}}</td>
+                                    <td>{{item.Gender}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</my-app>
