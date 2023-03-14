@@ -1,9 +1,9 @@
 // default bu dosyanın temel fonksiyonu budur demek, main gibi. 
 export default function GeneratorComponent({company, department}){
-    const generateContent=(input) => {
+    const generateContent = (input) => {
         return (
             <div>
-                Burası kuşaldı<strong><em> {input}</em></strong>
+                Burası kuşatıldı<strong><em> {input}</em></strong>
             </div>
         )
     }

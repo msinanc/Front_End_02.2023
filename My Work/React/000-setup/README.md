@@ -89,10 +89,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
     - Property
         -App.js içindeki <GeneratorComponent company="Godoro"> direk html attribute'u gibi gönderilir. company diye bir attribute uydurduk bu da bir property aslında. 
-            - Bunun içine {value} şeklinde de ekleme yapılabilir ama App.js içinde tanımlı bir şeyi atarsan böyle olur.
+            - Bunun içine {value} şeklinde de ekleme yapılabilir ama App.js içinde tanımlı bir değişkeni atarsan böyle olur. Ki çoğu zaman bu değişkeni Component içinden alıyoruz.
 
         - Diğer tarafta fonksiyon parametresi olarak props yazılıp;
-            [export default function GeneratorComponent(props) şeklinde]
+            [export default function GeneratorComponent(props)] şeklinde,
         sonra {props.company} şeklinde çağırılır.
 
         - JavaScript'teki destruct özelliği kullanılarak;
@@ -116,7 +116,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
             :
             5
         
-        - şeklinde kullanılır. HTML kodunu farklı satıra yazabilmek için.
+        - şeklinde kullanılır. HTML kodunu farklı satıra yazabilmek için. Burada 3 ve 5 yerine div'li şekilde HTML kodu gelir.
 
         -   {value > 10 &&
             <h2>Çok büyük</h2>
