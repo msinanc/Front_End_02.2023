@@ -14,4 +14,4 @@
 - react dom browser dom u ile ilişki kuran alan
 - npm start -> package.json içindeki scripts start komutunu o da üstteki react-scripts versiyonu ve oradan npm start komutunu bulup çalıştırır.
 
-- 
+- Satın alma paritesi, ülkeler arası farklar. Avrupa'da maaş almak ile Türkiye'de maaş alma farkı.

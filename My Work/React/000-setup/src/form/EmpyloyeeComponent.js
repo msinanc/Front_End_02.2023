@@ -22,25 +22,14 @@ export const EmployeeComponent = () => {
 
     }
 
-    const objectChanged = (e) => {
-        e.preventDefault();
-        setObject({
-            ...object,
-            name: nameChanged(),
-            salary: salaryChanged()
-        })
-    }
-
 
     return (
         <>
-            {object.id} {object.name} {object.salary} <br/>
-            id: {initialObject.id}
+            id: {initialObject.id}<br/>
             name: {object.name} <input type="text" name="name" 
-            value={object.name || ''} onChange={nameChanged}/>
+            value={object.name || ''} onChange={nameChanged}/><br/>
             salary: {object.salary}  <input type="number" name="salary" 
-            value={object.salary || ''} onChange={salaryChanged}/>
-            <input type="submit" name="Sakla" onClick={objectChanged} /><br/>
+            value={object.salary || ''} onChange={salaryChanged}/><br/>
         </>
     )
 }

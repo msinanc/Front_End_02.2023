@@ -1,7 +1,10 @@
 
 import './App.css';
-import { EmployeeComponent } from './form/EmpyloyeeComponent';
-// import { ObjectComponent } from './form/ObjectComponent';
+// import { MapContainerComponent } from './form/MapContainerComponent';
+// import MapItemComponent from './form/MapItemComponent';
+// import { EmployeeComponent } from './form/EmpyloyeeComponent';
+// import { TableComponent } from './form/TableComponent';
+import { ObjectComponent } from './form/ObjectComponent';
 // import { Department } from './form/DepartmentComponent';
 // import { FormComponent } from './form/FormComponent';
 // import StateAdditionComponent from './state/StateAdditionComponent';
@@ -19,8 +22,11 @@ function App() {
       <header className="App-header">
         <h1>Merhaba Godoros</h1>
 
-        <EmployeeComponent/>
-        {/* <ObjectComponent/> */}
+        {/* <MapItemComponent/> */}
+        {/* <MapContainerComponent/> */}
+        {/* <TableComponent/> */}
+        {/* <EmployeeComponent/> */}
+        <ObjectComponent/>
         {/* <Department/> */}
         {/* <FormComponent/> */}
 
