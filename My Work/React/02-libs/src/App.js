@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import SituationOutside from './context/SituationOutside';
+import ApplicationRoutes from './routing/application/ApplicationRoutes';
+// import SituationOutside from './context/SituationOutside';
 // import GrandmaComponent from './context/GrandmaComponent';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <GrandmaComponent/> */}
-        <SituationOutside/>
+        {/* <SituationOutside/> */}
+        <ApplicationRoutes/>
       </header>
     </div>
   );
