@@ -177,3 +177,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         - Buradaki yapı ile 10'u quantity'ye ata, sonra setQuantity dediğin her yerde anında quantity'yi göster.
 
         ÖDEV: İki sayı olsun, düğmeye basınca toplasın ama useState(). useState içine input'u koy.cache
+
+
+
+## Açıklama
+
+HWSituationOutside componenti içerisinde oluşturulan buton, HWSituationInside1 ve HWSituationInside2 arasında değişiklik yaparak iki farklı context döndürüyor. 
+
+İlgili js dosyaları src/context/HW dizinine yerleştirildi.
