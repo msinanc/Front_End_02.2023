@@ -99,6 +99,10 @@ src altındaki
 
 -   Routing turizm şirketi gibi rota belirler, sonrasında navigate, useNavigate gibi hook lar ile navigasyon yapılır ve gitmesi gereken yerlere gönderilir.
 
+### MUI
+
+-   Sitedeki tüm bileşenleri bil.
+
 ## ÖDEV:
 -   e-ticaret sitesi componentlara böl ve dosyaları ona göre tasarla.
     Header olsun, menü olsun, ürünler olsun vs.
@@ -109,5 +113,8 @@ src altındaki
 ## ÖDEV-2: Context ve Condition
 -   Tıklanınca state i değiştiren Checkbox'lı (dış bileşen)'i içteki bileşene aktaran ve içteki bileşende iki ayrı içeriğin göründüğü bir   sistem. 
 - Düğme dışarıda olacak, SituationOutside ve SituationInside gibi iki tane context'i tetikleyecek.
+
+### İnceleme Ödevi
+-   MUI component'larını incele.
 
 
