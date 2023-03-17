@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FetchGet } from "../../fetch/FetchGet";
+import { FetchList } from "../../fetch/FetchList";
 import NavigationIndex from "../module/NavigationIndex";
 import NavigationSource from "../module/NavigationSource";
 import NavigationTarget from "../module/NavigationTarget";
@@ -14,6 +16,8 @@ export default function ApplicationRoutes() {
                     <Route path="source" element={<NavigationSource/>}/>
                     <Route path="target" element={<NavigationTarget/>}/>
                     <Route path="target/:id" element={<NavigationTarget/>}/>
+                    <Route path="products" element={<FetchList/>}/>
+                    <Route path="product/:id" element={<FetchGet/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

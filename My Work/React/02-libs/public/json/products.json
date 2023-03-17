@@ -1,0 +1,5 @@
+[
+    { "id" : 301, "name" : "Cep Telefonu", "price" : 2350.0 },
+    { "id" : 302, "name" : "Masaüstü Bilgisayar", "price" : 6545.0 },
+    { "id" : 303, "name" : "Dizüstü Bilgisayar", "price" : 9865.0 }
+]

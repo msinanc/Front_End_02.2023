@@ -9,6 +9,8 @@ export default function ApplicationLayout() {
             <Link to="/source">Kaynağa Git</Link>
             <br/><br/>
             <Outlet/>
+            <Link to="/products">Ürünlere Git</Link>
+            
             <h2>Ayaklık</h2>
         </div>
     )
