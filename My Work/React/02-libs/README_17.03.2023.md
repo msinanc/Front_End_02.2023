@@ -68,7 +68,7 @@
 
 -   Tek bir datayı almak için id ile alınabilir.
 
-    const urlLGet = './json/product' + id + '.json';
+        const urlLGet = './json/product' + id + '.json';
 
 -   ObjectComponent içinde 
 
@@ -86,7 +86,7 @@
 
 -   NavigationTarget.js içerisindeki gibi useParams() kullanarak 
     
-    <Route path="product/:id" element={<FetchGet/>}/>
+        <Route path="product/:id" element={<FetchGet/>}/>
 
 içindeki :id'yi çağırmış oluruz.
 
@@ -94,7 +94,7 @@ içindeki :id'yi çağırmış oluruz.
 
 ile de gönderilen id ler kullanılır.
 
--   FetchGet.js içerisinde ortaya çıkan ürünleri göstermeme hatası da 
+-   FetchGet.js içerisinde ortaya çıkan ürünleri göstermeme hatası da
 
     const urlGet = '/json/product' + id + '.json';
 
