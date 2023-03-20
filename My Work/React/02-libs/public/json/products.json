@@ -1,5 +1,14 @@
-[
-    { "id" : 301, "name" : "Cep Telefonu", "price" : 2350.0 },
-    { "id" : 302, "name" : "Masaüstü Bilgisayar", "price" : 6545.0 },
-    { "id" : 303, "name" : "Dizüstü Bilgisayar", "price" : 9865.0 }
+[    
+    { "id": 301, "name": "Cep Telefonu", "price": 2350.0 },    
+    { "id": 302, "name": "Masaüstü Bilgisayar", "price": 6545.0 },    
+    { "id": 303, "name": "Dizüstü Bilgisayar", "price": 9865.0 },    
+    { "id": 304, "name": "Akıllı Saat", "price": 1420.0 },    
+    { "id": 305, "name": "Kablosuz Kulaklık", "price": 570.0 },    
+    { "id": 306, "name": "Tablet", "price": 3200.0 },    
+    { "id": 307, "name": "Televizyon", "price": 7699.0 },    
+    { "id": 308, "name": "Oyun Konsolu", "price": 2780.0 },    
+    { "id": 309, "name": "Yazıcı", "price": 930.0 },    
+    { "id": 310, "name": "Harici Hard Disk", "price": 820.0 },    
+    { "id": 311, "name": "Akıllı Hoparlör", "price": 1575.0 },    
+    { "id": 312, "name": "E-kitap Okuyucu", "price": 1150.0 }
 ]

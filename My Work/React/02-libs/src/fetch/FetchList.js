@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ProductTable } from "../mui/ProductTable";
 
 const urlList = './json/products.json';
 
 
-export const FetchList = () => {
+export const FetchList = ({data}) => {
     const [products, setProducts] = useState([]);
     
     useEffect(() =>{
@@ -34,6 +35,8 @@ export const FetchList = () => {
                     )}
                 </tbody>
             </table>
+            <hr/>
+            <ProductTable data={products} />
         </div>
     )
 }
