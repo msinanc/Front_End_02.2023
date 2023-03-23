@@ -11,6 +11,8 @@ function App() {
         
         <ApplicationRoutes/>
 
+        
+
     </div>
   );
 }

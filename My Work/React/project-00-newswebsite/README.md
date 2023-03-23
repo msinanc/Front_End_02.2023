@@ -78,4 +78,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     -   pages will be changed to specific categories.
     -   settings array will be changed.
 
+### ThinHeaderBar
+
+-   Add a logIn pop up onClick function to profile pic avatar.
+
+-   Add weather forecast
+
     

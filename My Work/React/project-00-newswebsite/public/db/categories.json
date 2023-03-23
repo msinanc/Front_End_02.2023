@@ -1,0 +1,33 @@
+{
+    "categories": [
+        {
+            "id": "business",
+            "name": "İş Dünyası"
+        },
+        {
+            "id": "entertainment",
+            "name": "Eğlence"
+        },
+        {
+            "id": "general",
+            "name": "Genel"
+        },
+        {
+            "id": "health",
+            "name": "Sağlık"
+        },
+        {
+            "id": "science",
+            "name": "Bilim"
+        },
+        {
+            "id": "sports",
+            "name": "Spor"
+        },
+        {
+            "id": "technology",
+            "name": "Teknoloji"
+        }
+    ]
+}
+  

@@ -88,7 +88,9 @@ function ResponsiveAppBar() {
     //Search Box Functions - 1
 
     return (
-        <AppBar position="static" sx={{ borderBottomLeftRadius: '7px', borderBottomRightRadius: '7px' }} >
+        <AppBar position="static" sx={{ borderBottomLeftRadius: '7px', 
+                                        borderBottomRightRadius: '7px',
+                                        bgcolor: '#800000' }} >
             <Outlet/>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
@@ -108,7 +110,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        HABER-softITo
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -164,7 +166,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        <Link to="/" >LOGO</Link>
+                        <Link to="/" >HABER-softITo</Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
